@@ -1,5 +1,4 @@
-export interface FlexProps {
-  dir?: string;
-  justify?: string;
-  align?: string;
+export interface ILink {
+  title: string;
+  href: string;
 }

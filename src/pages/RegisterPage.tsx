@@ -1,3 +1,11 @@
+import AppTemplate from 'templates/AppTemplate';
+
 export default function RegisterPage(): JSX.Element {
-  return <div>Register Page</div>;
+  return (
+    <div>
+      <AppTemplate>
+        <h1>Register Page</h1>
+      </AppTemplate>
+    </div>
+  );
 }

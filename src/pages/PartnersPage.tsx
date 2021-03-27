@@ -1,3 +1,11 @@
+import AppTemplate from 'templates/AppTemplate';
+
 export default function PartnersPage(): JSX.Element {
-  return <div>Partners Page</div>;
+  return (
+    <div>
+      <AppTemplate>
+        <h1>Partners Page</h1>
+      </AppTemplate>
+    </div>
+  );
 }

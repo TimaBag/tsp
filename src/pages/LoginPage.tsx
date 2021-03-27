@@ -1,3 +1,11 @@
+import AppTemplate from 'templates/AppTemplate';
+
 export default function LoginPage(): JSX.Element {
-  return <div>Login Page</div>;
+  return (
+    <div>
+      <AppTemplate>
+        <h1>Login Page</h1>
+      </AppTemplate>
+    </div>
+  );
 }

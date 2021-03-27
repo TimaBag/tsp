@@ -1,10 +1,11 @@
-import Header from 'components/atoms/Header';
+import AppTemplate from 'templates/AppTemplate';
 
 export default function HomePage(): JSX.Element {
   return (
     <div>
-      <Header />
-      <h1>Home Page</h1>
+      <AppTemplate>
+        <h1>Home Page</h1>
+      </AppTemplate>
     </div>
   );
 }
