@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { TypographyProps } from './props';
 import { TextProps } from './types';
 import { getTextProps } from './utils';
+// import { getTag } from './utils';
 
 const Text = styled.div<TextProps>`
   font-family: Montserrat;
@@ -17,9 +18,11 @@ const Text = styled.div<TextProps>`
 export default function Typography(props: TypographyProps): JSX.Element {
   const { variant, children, color } = props;
   const textProps = getTextProps(variant);
-  // const Tag = createElement(getTag(variant, tag));
+  // const textTag = getTag(variant, tag);
   return (
     <Text
+      // TODO: fix as={variable} or recreate component
+      as="h1"
       fontSize={textProps.fontSize}
       fontWeight={textProps.fontWeight}
       lineHeight={textProps.lineHeight}
