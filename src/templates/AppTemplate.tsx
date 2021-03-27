@@ -9,7 +9,7 @@ const AppTemplate: FC = ({ children }) => {
   return (
     <Flex dir="column">
       <Header />
-      <Flex dir="row" justify="start">
+      <Flex style={{ background: '#E5E5E5' }} dir="row" justify="start">
         <Sidebar />
         {children}
       </Flex>
