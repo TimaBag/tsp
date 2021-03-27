@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
     "target": "es5",
     "lib": [
       "dom",
@@ -22,5 +28,6 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": ["node_modules"]
 }
