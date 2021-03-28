@@ -2,11 +2,15 @@ import AppTemplate from 'templates/AppTemplate';
 import styled from 'styled-components';
 
 import NdsTable from 'components/molecules/NdsTable';
+import RealFacts from 'components/molecules/RealFacts';
+import NewsBlock from 'components/molecules/NewsBlock';
+import StrategicData from 'components/molecules/StrategicData';
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.3fr 1.2fr;
+  gap: 20px;
   padding: 40px;
 `;
 
@@ -16,6 +20,9 @@ export default function HomePage(): JSX.Element {
       <AppTemplate>
         <Grid>
           <NdsTable />
+          <RealFacts />
+          <NewsBlock />
+          <StrategicData />
         </Grid>
       </AppTemplate>
     </div>
