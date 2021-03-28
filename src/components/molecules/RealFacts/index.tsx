@@ -24,12 +24,37 @@ const Ul = styled.ul`
 const Card = styled.div`
   width: 360px;
   height: 160px;
+  padding: 10px;
   background: #fb9678;
 `;
 
 const Slider = styled(ReactSlider)`
   width: 360px;
   height: 160px;
+  > .slick-dots li button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: white;
+    opacity: 31%;
+  }
+  > .slick-dots li.slick-active button {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    opacity: 100%;
+  }
+  > .slick-dots li button:before {
+    display: none;
+  }
+  > .slick-dots {
+    bottom: 0;
+    width: 94%;
+    text-align: right;
+  }
 `;
 
 export default function RealFacts(): JSX.Element {
@@ -60,7 +85,7 @@ export default function RealFacts(): JSX.Element {
       <Slider {...settings}>
         {cards.map((c: string, i: number) => (
           <Card key={`${c}_${i}`}>
-            <Typography variant="text" color="white">
+            <Typography variant="text-micro" color="white">
               {c}
             </Typography>
           </Card>
