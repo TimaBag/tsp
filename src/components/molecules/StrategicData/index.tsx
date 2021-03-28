@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 import Typography from 'components/atoms/NedoTypography';
 import Flex from 'components/atoms/Flex';
+import ReadMoreLink from 'components/atoms/ReadMoreLink';
 
 import { numbers } from './numbers';
 import { INumber } from './types';
 
 const Div = styled.div`
+  position: relative;
   background-color: white;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -19,6 +21,7 @@ export default function StrategicData(): JSX.Element {
       <Typography variant="text" color="#000">
         СТРАТЕГИЧЕСКИЕ ДАННЫЕ ПО РЫНКУ:
       </Typography>
+      <ReadMoreLink href="/" title="Подробнее" />
       <Flex align="center">
         {numbers.map((num: INumber, i: number) => (
           <div style={{ textAlign: 'center' }} key={`${num.title}_${i}`}>
