@@ -1,6 +1,8 @@
+import { Suspense } from 'react';
 import AppTemplate from 'templates/AppTemplate';
 import styled from 'styled-components';
 
+import Loader from 'components/atoms/Loader';
 import NdsTable from 'components/molecules/NdsTable';
 import RealFacts from 'components/molecules/RealFacts';
 import NewsBlock from 'components/molecules/NewsBlock';
@@ -21,7 +23,9 @@ export default function HomePage(): JSX.Element {
         <Grid>
           <NdsTable />
           <RealFacts />
-          <NewsBlock />
+          <Suspense fallback={<Loader />}>
+            <NewsBlock />
+          </Suspense>
           <StrategicData />
         </Grid>
       </AppTemplate>

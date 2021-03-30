@@ -1,11 +1,15 @@
+import { useRecoilValue } from 'recoil';
 import styled from 'styled-components';
+
+import moment from 'moment';
 
 import ReadMoreLink from 'components/atoms/ReadMoreLink';
 import Typography from 'components/atoms/NedoTypography';
 import Flex from 'components/atoms/Flex';
 
-import { news, mainNews } from './news';
-import { INews } from './types';
+import { mainNews } from './news';
+import { News } from 'store/news/models';
+import { NewsListSelector } from 'store/news/selectors';
 
 const Div = styled.div`
   position: relative;
@@ -20,10 +24,13 @@ const Divider = styled.hr`
 `;
 
 const NewsItem = styled.div`
-  width: 25%;
+  width: 24%;
+  padding: 0 10px;
 `;
 
 export default function NewsBlock(): JSX.Element {
+  const news = useRecoilValue(NewsListSelector);
+
   return (
     <Div>
       <Flex justify="flex-start" align="center">
@@ -40,13 +47,13 @@ export default function NewsBlock(): JSX.Element {
       <ReadMoreLink href="/" title="Читать все новости" />
       <Divider />
       <Flex>
-        {news.map((n: INews, i: number) => (
-          <NewsItem key={`${n.date}_${i}`}>
+        {news.map((n: News) => (
+          <NewsItem key={`${n.datetime}_${n.id}`}>
             <Typography variant="heading-3" color="#000">
-              {n.date}
+              {moment(n.datetime).format('DD.MM.YYYY')}
             </Typography>
             <Typography variant="text" color="#000">
-              {n.content}
+              {n.title}
             </Typography>
           </NewsItem>
         ))}

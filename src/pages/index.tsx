@@ -1,6 +1,8 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import Loader from 'components/atoms/Loader';
+
 const HomePage = lazy(() => import('pages/HomePage'));
 const NewsPage = lazy(() => import('pages/NewsPage'));
 const PartnersPage = lazy(() => import('pages/PartnersPage'));
@@ -14,7 +16,7 @@ const RegisterPage = lazy(() => import('pages/RegisterPage'));
 export default function RouterContainer(): JSX.Element {
   return (
     <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Switch>
           <Route path="/" exact={true}>
             <HomePage />
