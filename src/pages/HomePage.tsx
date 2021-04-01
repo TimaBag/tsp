@@ -17,6 +17,11 @@ const Grid = styled.div`
   padding: 40px;
 `;
 
+const Div = styled.div`
+  position: relative;
+  grid-column: 1 / 3;
+`;
+
 export default function HomePage(): JSX.Element {
   return (
     <div>
@@ -28,7 +33,9 @@ export default function HomePage(): JSX.Element {
             <NewsBlock />
           </Suspense>
           <StrategicData />
-          <Map />
+          <Div>
+            <Map />
+          </Div>
         </Grid>
       </AppTemplate>
     </div>
