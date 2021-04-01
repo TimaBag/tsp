@@ -7,6 +7,7 @@ import NdsTable from 'components/molecules/NdsTable';
 import RealFacts from 'components/molecules/RealFacts';
 import NewsBlock from 'components/molecules/NewsBlock';
 import StrategicData from 'components/molecules/StrategicData';
+import Map from 'components/organisms/Map';
 
 const Grid = styled.div`
   display: grid;
@@ -27,6 +28,7 @@ export default function HomePage(): JSX.Element {
             <NewsBlock />
           </Suspense>
           <StrategicData />
+          <Map />
         </Grid>
       </AppTemplate>
     </div>
