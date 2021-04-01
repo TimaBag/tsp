@@ -1,0 +1,21 @@
+.chart-card{
+	min-height: 420px;
+}
+.chart-card .ant-card-body{padding: 12px 24px}
+.chart-card .ant-tabs-ink-bar{background-color: #fff}
+.chart-card .ant-tabs-bar{border:0;margin: 0 0 13px 0;}
+.chart-card .ant-tabs-nav .ant-tabs-tab {
+	font-family: 'RobotoBold',sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0 22px 0 0;
+	color: #c7c7c7;
+}
+.chart-card .ant-tabs-nav .ant-tabs-tab-active {
+	color: #0a7ee3;
+}
+.list-segments{
+	width: max-content;
+	margin: 0 auto;
+}

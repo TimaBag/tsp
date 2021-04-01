@@ -1,0 +1,57 @@
+.account-card{
+	min-height: 195px;
+}
+
+.icon_edit{
+	background: url(../images/icon_edit_gray.png);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 12px;
+	margin-right: 10px;
+}
+.icon_delete{
+	background: url(../images/delete_icon.png);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 12px;
+	margin-right: 10px;
+}
+.icon_safe{
+	background: url(../images/safe_icon.png);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 12px;
+	margin-right: 10px;
+}
+.icon_hide{
+	background: url(../images/hide_icon.png);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+.account_insurance-card{	
+	min-height: 740px;
+}
+
+.account_table .ant-table-thead > tr > th,.account_table .ant-table-tbody > tr > td{
+	width: max-content;	
+	position: relative;
+}
+.account_table .ant-table-thead > tr > th{
+	font-family: "RobotoMedium",sans-serif;
+	font-size: 12px;
+	color: #c7c7c7;
+	background: #fff;
+	text-transform: uppercase;
+}
+.account_table .ant-table-tbody > tr > td{
+	font-family: "RobotoMedium",sans-serif;
+	font-size: 14px;
+}
+.account_table .ant-table-tbody > tr > td.ant-table-selection-column{
+	width:14px;
+	padding: 16px 0;
+	min-width: 32px;
+}

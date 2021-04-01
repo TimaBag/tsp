@@ -1,0 +1,114 @@
+.header-wrapper {
+  background: #13181c!important;;
+  padding: 0;
+  padding: 0 45px;
+  display: flex;
+  align-items: center;
+  height: 65px!important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.21);
+  -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.21);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.21); */
+}
+.header-menu, .header-menu > .ant-menu {height: 65px;border-bottom: 0!important;;background: #13181c!important;}
+.header-menu > .ant-menu-item,
+.header-menu > .ant-menu-submenu{
+  height: 65px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right:25px;
+  color: #fff!important;
+}
+.header-menu > .ant-menu-item > a{
+  font-family: "RobotoMeduim", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6a6e73!important;
+}
+.ant-menu-item .anticon{
+  color: #6a6e73!important;
+}
+.ant-menu-item .anticon,
+.ant-menu-submenu-title .anticon{margin-right: 0;}
+.header-menu > .ant-menu-item > a:hover,
+.header-menu > .ant-menu-item:hover .anticon{
+  color: #007ff2!important;
+}
+.header-menu > .ant-menu-item:hover{
+  border-bottom: 2px solid #007ef3!important;
+}
+.header-menu > .ant-menu-item:hover a{
+  color: #fff!important;
+}
+.header-menu > .ant-menu-item-selected {
+  border-bottom: 3px solid #007ef3!important;
+}
+.header-menu > .ant-menu-item-selected > a{
+  color: #fff!important;
+}
+.header-logo{
+  background: url(../images/logo.png);
+  background-repeat: no-repeat;
+  width: 220px;
+  height: 18px;
+}
+.header-controls {
+  display: flex;
+  align-items: center;
+}
+.header-avatar {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  line-height: 1;
+}
+.header-link{
+  color: #fff;
+  margin-left: 25px;
+}
+.header-dropdown-item {
+  color: #fff;
+  line-height: 1;
+  margin-left: 25px;
+}
+.ant-menu-inline-collapsed{
+  width: 0;
+  display: none;
+}
+.under_dis_link{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  left: 0;
+}
+.slogan .ant-card-body{
+  padding: 10px 0;
+}
+.drop-menu{
+  position: absolute;
+  bottom: -240px;
+}
+@media only screen and (max-width: 1440px) {
+  .menu-mb {
+    display: block;
+  }
+  .hide_menu-mb{
+    display: none;
+  }
+  .table_menu{
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .hide_menu-btn, .table_menu{
+    display: none;
+  }
+  .show_menu{
+    display: block;
+  }
+}

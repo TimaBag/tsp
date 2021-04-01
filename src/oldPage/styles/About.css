@@ -1,0 +1,74 @@
+.about-card {
+	min-height: 880px;
+}
+.about-card .ant-card-head{
+	margin: 0 24px;
+	padding: 0;
+}
+.about-card .ant-card-head-title{
+	font-family: "RobotoBold",sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+.about-card p{
+	font-family: "RobotoRegular",sans-serif;
+	font-size: 15px;
+}
+.about-head{
+	min-height: 170px;
+}
+.socials span{
+	margin-right: 5px;
+}
+.about-logo{
+	font-size: 40px;
+	font-family: "RobotoMedium",sans-serif;
+	font-weight: 500;
+}
+.vimeo_logo{
+	background: url("../images/vimeo_logo.png");
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 43px;
+}
+.twit_logo{
+	background: url("../images/twit_logo.png");
+	background-repeat: no-repeat;	
+	width: 44px;
+	height: 43px;
+}
+.link_logo{
+	background: url("../images/link_logo.png");
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 43px;
+}
+.facebook_logo{
+	background: url("../images/facebook_logo.png");
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 43px;
+}
+.print_logo{
+	background: url("../images/print_logo.png");
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 43px;
+}
+.gmail_logo{
+	background: url("../images/gmail_logo.png");
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 43px;
+}
+.insta_logo{
+	background: url("../images/insta_logo.png");
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 43px;
+}
+.gray-block{
+	background: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #d6d6d6;
+}

@@ -1,0 +1,39 @@
+.calendar-card {
+	min-height: 420px;
+}
+.calendar-card .ant-card-head{
+	border-bottom: 0;
+}
+.calendar-card .ant-card-head-title{
+	color: #0a7ee3;
+	text-transform: uppercase;
+	font-family: 'RobotoBold',sans-serif;
+	font-size: 14px;
+	padding: 12px 0;
+}
+.calendar-card_date{
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 20px;
+}
+.cur_date-in_calendar{
+    width: max-content;
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    font-family: 'RobotoMedium',sans-serif;
+}
+.calendar-card_date .ant-calendar-picker{
+	width: 150px;
+    margin-left: 6px;
+}
+.calendar-card .ant-list {
+	font-family: 'RobotoRegular',sans-serif;
+}
+.calendar-card_list-news .ant-list-item-meta-title > a{
+	font-size: 14px;
+	color: #acacac;
+}
+.calendar-card_list-news .ant-list-item-meta-description{
+	font-size: 15px;
+	color: #000;
+}

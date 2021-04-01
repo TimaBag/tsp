@@ -1,0 +1,117 @@
+/* sidebar styles */
+.sidebar {
+  min-width: 110px;
+  width: 205px;
+  position: fixed;
+  left: 0;
+  top: 65px;
+  height: 100vh;
+  z-index: 1000;
+  background: #fff;
+  color: #000;
+  border-right: 1px solid #f4f4f4;
+}
+.sidebar .logo {
+  height: 65px;
+  width: 65px;
+  background: #999;
+  border-radius: 50%;
+  margin: 30px auto 12px;
+  text-align: center;
+}
+.sidebar_company-profile{
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+.company-name{
+  font-family: 'RobotoMedium',sans-serif;
+  font-size: 14px;
+  margin: 15px 27px;
+  text-align: center;
+}
+.company-rating{
+  font-family: 'RobotoMedium',sans-serif;
+  font-size: 13px;
+
+  text-align: center;
+  margin-bottom: 26px;
+}
+.sidebar-menu{
+  border-right: 0;
+}
+.sidebar-menu > .sidebar-menu-item > .ant-menu{
+
+  color: #000;
+}
+.sidebar-menu > .sidebar-menu-item > .ant-menu-submenu-title{
+  height: 40px;
+  padding: 0 !important;
+  text-align: center;
+  border-top: 1px solid #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-menu-item .ant-menu-sub.ant-menu-inline > .ant-menu-item{
+  width: min-content;
+  display: block;
+  margin-left: 55px;
+  height: 30px;
+  font-family: 'RobotoBold',sans-serif;
+  font-size: 12px;
+}
+.sidebar-menu-item .ant-menu-sub.ant-menu-inline > .ant-menu-item,
+.sidebar-menu-item .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title{
+  padding: 0 !important;
+  text-align: center;
+}
+.sidebar-menu-item .ant-menu-item-selected{
+  color: #007ef3;
+}
+.sidebar-menu-item .ant-menu-item-selected:after{
+  width: 100%;
+  border-bottom: 2px solid #1890ff;
+  border-right: 0;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background: none;
+}
+.sidebar-menu-item > .ant-menu-submenu-title .ant-menu-submenu-arrow{display: none;}
+.sidebar-menu-item .anticon{
+  font-size: 20px;
+}
+.sidebar-menu-title{
+  width: 100%;
+  padding: 0 28px;
+}
+.sidebar-menu-item p{
+  letter-spacing: -0.5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'RobotoBold',sans-serif;
+  line-height: 0.3em;
+  margin-bottom: 0;
+  margin-left: 14px;
+  padding: 6px 0;
+  color: #000;
+}
+.icon_oilprod{
+  background: url(../images/sidebar_icon-1.png);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+}
+.icon_oil{
+  background: url(../images/sidebar_icon-2.png);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+}
+.icon_other{
+  background: url(../images/sidebar_icon-3.png);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  background-position-y:50%;
+}

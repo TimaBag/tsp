@@ -1,0 +1,6 @@
+.setting-card {
+	min-height: 790px;
+}
+.setting-card .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+	margin-left: 0;
+}

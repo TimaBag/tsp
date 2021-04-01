@@ -1,0 +1,27 @@
+.message-card{
+	min-height: 880px;
+}
+.message-gray_block{
+	height: 775px;
+	background: #f8f8f8;
+}
+.message-list .ant-list-item:first-child{
+	border:1px solid #e8e8e8;
+	border-bottom: 0.5px solid #e8e8e8;
+}
+.message-list .ant-list-item{
+	border:1px solid #e8e8e8;
+	border-top: 0.5px solid #e8e8e8;
+	border-bottom: 0.5px solid #e8e8e8;
+	padding: 20px;
+}
+.message-list .ant-list-item:last-child{
+	border-bottom: 1px solid #e8e8e8;
+}
+.message-gray-txt_area{
+	background: #fefefe;
+}
+.chat-container {
+	max-height: 80vh;
+	overflow-y: auto; 
+}

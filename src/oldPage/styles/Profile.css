@@ -1,0 +1,188 @@
+.profile-card,.profile-card-comment{
+  min-height: 940px;
+}
+.profile-card .ant-card-body{
+  padding: 0;
+}
+.profile-card .ant-card-head-title,.profile-card-comment .ant-card-head-title{
+  font-family: "RobotoBold",sans-serif;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+}
+.profile_last-update{
+  font-family: "RobotoRegular",sans-serif;
+  font-size: 14px;
+  color: #b5b5b5;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+}
+.profile-head{
+  background: #007ff2;
+  color: #fff;
+  padding: 25px;  
+  max-height: 280px;
+}
+.profile_logo{
+  width: 85px;
+  height: 85px; 
+  border-radius: 50%;  
+  text-align: center;
+  margin-bottom: 10px;
+}
+.profile_head-btn{
+  background: transparent;
+  width: 85px;
+  height: 25px;
+  font-family: "RobotoRegular",sans-serif;
+  font-size: 13px;
+  border:1px solid #3a9bf4;
+  color: #9ed0ff;
+}
+.profile_data h2 {
+  font-family: "RobotoMedium",sans-serif;
+  font-size: 21px;
+}
+.profile_data-link{
+  font-family: "RobotoMedium",sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 20px;
+}
+.profile_data p{
+  font-family: "RobotoRegular",sans-serif;
+  font-size: 14px;
+}
+.profile_data span{
+  color: #9ed0ff;
+  font-family: "RobotoMedium",sans-serif;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.profile_active-btn{
+  font-family: "RobotoMedium",sans-serif;
+  font-size: 14px;
+  padding: 10px 13px;
+  color: #007ff2;
+  background: #fff;
+  margin-right: 10px;
+  line-height:1;
+  height: 35px;
+}
+.profile-list,.profile-desc{
+  margin: 30px;
+}
+.profile-desc{
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e7ebf1;
+}
+.profile_edit-link{
+  text-transform: uppercase;
+  color: #007ff2;
+  font-family: "RobotoBold",sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.icon_edit_blue{
+  background: url(../images/icon_edit.png);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+.profile-desc h2 ,.profile_comment-header h2{
+  font-family: "RobotoBold",sans-serif;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 0;
+}
+.profile-desc span {
+  font-family: "RobotoRegular",sans-serif;
+  font-size: 15px;
+  color: #969696;
+}
+.profile-desc p {
+  font-family: "RobotoMedium",sans-serif;
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+.profile-list .ant-list-split .ant-list-item{
+  border-bottom: 0;
+  padding-top: 0;
+}
+.profile-list .ant-list-item-meta-title{
+  color: #acacac;
+  font-family: "RobotoRegular",sans-serif;
+  font-size: 14px;
+}
+.profile-list .ant-list-item-meta-description{
+  color: #000;
+  font-family: "RobotoMedium",sans-serif;
+  font-size: 15px;
+}
+.profile_view-doc{
+  font-size: 15px;
+  font-family: "RobotoMedium",sans-serif;
+}
+.profile-card-comment .ant-card-head {
+  border-bottom: 0;
+
+}
+
+.profile_comment-list .ant-list-item{
+  border-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+.profile_comment-list .ant-card{
+  box-shadow: none;
+  width: 100%;
+}
+.profile_comment-logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #acacac;
+  text-align: center;
+}
+.profile_comment-header p {
+  font-family: "RobotoMedium",sans-serif;
+  font-size: 13px;
+  color:#000;
+}
+.profile_comment-desc{
+  font-family: "RobotoRegular",sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+.gallery_block{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.gallery_img{
+  width: 300px;
+  object-fit: cover;
+  height: 250px;
+  margin-bottom: 10px;
+}
+.gallery_vide_block{
+  width: 600px;
+  margin: 0 auto;
+  height: 420px;
+}
+.gallery_video{
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 600px;
+  max-height: 400px;
+  width: 600px;
+  height: auto;
+  z-index: 1;
+}

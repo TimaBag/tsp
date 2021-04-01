@@ -1,0 +1,28 @@
+.stock-card{
+	min-height: 400px;
+}
+.stock_status-card{
+	height: 890px;
+	border-bottom: none;
+}
+.stock_safe-card{
+	height: 890px;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+.stock_status-card .ant-select{
+	width: 100%;
+}
+.map-img{
+	height: 400px;
+	width: 100vw;
+}
+.stock-modal{
+	height: 600px;
+}
+.stock-modal .ant-modal-header{
+  border-bottom: 0;
+}
+.stock-modal .ant-modal-body{
+  padding-top: 20px;
+}

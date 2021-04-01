@@ -1,0 +1,88 @@
+.service-card {
+	min-height: 765px;
+}
+.service-card .ant-card-body > div{
+	height: 705px;
+}
+.service-menu{
+	margin-top: 12px;
+	border-radius: 0;
+}
+.service-menu .ant-list-item{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.service-menu .ant-list-item-meta-title{
+	margin-bottom: 0;
+}
+.service-menu p{
+	letter-spacing: -1px;
+    font-size: 15px;    
+    font-family: 'RobotoMedium',sans-serif;
+    line-height: 1em;
+    margin-bottom: 0;
+    margin-left: 14px;
+    padding: 6px 0;
+    color: #000;
+}
+.active_serv_menu{
+	border: 3px solid #288cea;
+	border-bottom: 3px solid #288cea!important;
+}
+
+.srv_menu_div {
+	width:100%;
+}
+.service-menu .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+	margin-left: 0;
+}
+.menu_collapse{
+	min-height: max-content;
+}
+.in_menu_collapse{
+	border:none;
+	background-color: transparent;
+}
+.in_menu_collapse > .ant-collapse-item{
+	border-bottom: 0;
+}
+.in_menu_collapse .ant-collapse-item:last-child > .ant-collapse-content{
+	border-top: 0;
+	border-radius: 0;
+	border-bottom: 3px solid #1890ff;
+}
+.service_card-footer{
+	border-top: 1px solid #e8e8e8;
+	position: absolute;
+	bottom: 0;
+	height: 50px;	
+	width: 100%;
+	padding-top: 10px;
+}
+.icon_serv_1{
+  background: url(../images/stock_icon-1.png);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 25px;
+}
+.icon_serv_2{
+  background: url(../images/stock_icon-2.png);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 25px;
+}
+.icon_serv_3{
+  background: url(../images/stock_icon-3.png);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 25px;
+  background-position-y:50%;
+}
+.service-content{
+	padding-top: 25px;
+}
+.desc-service{
+	font-size: 16px;
+	font-family: 'RobotoMedium',sans-serif;
+}
+

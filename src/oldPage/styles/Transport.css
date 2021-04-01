@@ -1,0 +1,53 @@
+.transport-card{
+  height: 890px;
+  overflow-y: auto;
+}
+.transport-card .ant-tabs-ink-bar{
+  background: none;
+}
+.transport-card .ant-card-head .ant-tabs-bar{
+  border-bottom: 0; 
+}
+.transport-card .ant-tabs-large .ant-tabs-tab{
+  font-family: "RobotoBold",sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding-left: 0;
+}
+.transport-tabs .ant-tabs-bar{display: flex;padding: 16px 0;border-bottom : none;margin-bottom: 0;}
+.transport-tabs .ant-tabs-nav .ant-tabs-tab{
+  font-family: 'RobotoBold',sans-serif;
+  font-size: 14px!important;
+  text-transform: uppercase;
+}
+.transport-tabs .ant-tabs-tab-active{color: #0a7ee3;}
+.transport-tabs .ant-tabs-ink-bar{background-color: #fff;display: none}
+.transport-tabs .ant-tabs-nav .ant-tabs-tab{
+  margin: 0;
+  padding: 7px 0;
+  padding-right: 22px;
+  font-size: 14px; 
+}
+.transport-tabs .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+  margin-left: 10px;
+}
+.tran_forward-comp .ant-list-split .ant-list-item:first-child{
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 0;
+}  
+.tran_forward-comp .ant-list-split .ant-list-item{  
+  padding: 10px 15px;
+  border:1px solid #e8e8e8;
+}
+
+.tran_forward-comp .ant-list-split .ant-list-item:last-child{ 
+  padding: 10px 15px;
+  border-top: 0px;
+  border-bottom: 1px solid #e8e8e8;
+}
+#map_inner div svg text{
+  display: none;
+}
+.add-modal_transport .ant-modal-footer{
+  display: block;
+}

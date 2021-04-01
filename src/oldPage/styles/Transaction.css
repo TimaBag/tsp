@@ -1,0 +1,13 @@
+.transaction-card,.transaction-card-gray{
+	height: 880px;
+}
+.transaction-card-gray{
+	background-color: #f8f8f8;
+}
+.white-block{
+	background: #fff;
+	padding: 20px;
+}
+.vertical_radio .ant-radio-wrapper{
+	display: block;
+}
