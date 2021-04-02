@@ -10,7 +10,7 @@ const Select = styled.select`
 
 const SearchButton = styled.button`
   position: absolute;
-  right: 20px;
+  left: 45%;
   top: 20px;
   background: url('search-icon.svg');
   background-color: white;
@@ -23,20 +23,19 @@ const SearchButton = styled.button`
 export default function Map(): JSX.Element {
   return (
     <>
-      <div id="map" style={{ width: '50%', height: '498px' }}>
-        <Select style={{ left: '20px' }}>
-          <option>KAZAKHSTAN</option>
-          <option>RUSSIAN</option>
-          <option>UZBEKISTAN</option>
-        </Select>
-        <Select style={{ left: '180px' }}>
-          <option>ТОО "SINOOIL"</option>
-          <option>ТОО "SINOOIL 2"</option>
-          <option>ТОО "SINOOIL 3"</option>
-          <option>ТОО "SINOOIL 4"</option>
-        </Select>
-        <SearchButton />
-      </div>
+      <div id="map" style={{ width: '48%', height: '498px' }} />
+      <Select style={{ left: '20px' }}>
+        <option>KAZAKHSTAN</option>
+        <option>RUSSIAN</option>
+        <option>UZBEKISTAN</option>
+      </Select>
+      <Select style={{ left: '180px' }}>
+        <option>ТОО "SINOOIL"</option>
+        <option>ТОО "SINOOIL 2"</option>
+        <option>ТОО "SINOOIL 3"</option>
+        <option>ТОО "SINOOIL 4"</option>
+      </Select>
+      <SearchButton />
     </>
   );
 }
