@@ -13,7 +13,7 @@ import Flex from 'components/atoms/Flex';
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1.3fr 1.2fr;
+  grid-template-rows: 1fr 360px 200px;
   gap: 20px;
   padding: 40px;
 `;

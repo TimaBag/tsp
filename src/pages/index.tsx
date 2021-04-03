@@ -9,7 +9,7 @@ import FooterWrapper from 'oldPage/components/Footer';
 const { Content } = Layout;
 
 const HomePage = lazy(() => import('pages/HomePage'));
-const NewsPage = lazy(() => import('pages/NewsPage'));
+// const NewsPage = lazy(() => import('pages/NewsPage'));
 const PartnersPage = lazy(() => import('pages/PartnersPage'));
 const TransportationPage = lazy(() => import('pages/TransportationPage'));
 const StoragePage = lazy(() => import('pages/StoragePage'));
@@ -51,7 +51,7 @@ export default function RouterContainer(): JSX.Element {
             <HomePage />
           </Route>
           <Route path="/news">
-            <NewsPage />
+            <OldNewsPage />
           </Route>
           <Route path="/partners">
             <PartnersPage />
@@ -77,28 +77,28 @@ export default function RouterContainer(): JSX.Element {
             <Layout className="content-layout">
               <HeaderWrapper />
               <Content className="content-block">
-                <Route path="/dashboard" component={Dashboard}/>
-                <Route path="/news/:item_id?" component={OldNewsPage}/>
-                <Route path="/stocks" component={StocksPage}/>
-                <Route path="/services" component={ServicesPage}/>
-                <Route path="/companies" component={CompaniesPage}/>
+                <Route path="/dashboard" component={Dashboard} />
+                <Route path="/news/:item_id?" component={OldNewsPage} />
+                <Route path="/stocks" component={StocksPage} />
+                <Route path="/services" component={ServicesPage} />
+                <Route path="/companies" component={CompaniesPage} />
 
-                <Route path="/faq" component={Faq}/>
-                <Route path="/about" component={About}/>
-                <Route path="/profile/:company_id" component={Profile}/>
-                <Route path="/trade/:contract_id" component={Trade}/>
-                <Route path="/transport" component={Transport}/>
-                <Route path="/account/insurance" component={AccountInsurance}/>
-                <Route path="/account/forwarder" component={AccountForwarder}/>
-                <Route path="/account/security" component={AccountSecurity}/>
-                <Route path="/account/company" component={AccountCompany}/>
-                <Route path="/account/bank" component={AccountBank}/>
-                <Route path="/account/store" component={AccountStore}/>
-                <Route path="/trades" component={TradeHistory}/>
-                <Route path="/messages/:user_id?" component={ChatsPage}/>
-                <Route path="/settings/" component={Settings}/>
-                <Route path="/forget_password/:token" component={ForgetPage}/>
-                <Route path="/paybox-success" component={PaymentSuccessPage}/>
+                <Route path="/faq" component={Faq} />
+                <Route path="/about" component={About} />
+                <Route path="/profile/:company_id" component={Profile} />
+                <Route path="/trade/:contract_id" component={Trade} />
+                <Route path="/transport" component={Transport} />
+                <Route path="/account/insurance" component={AccountInsurance} />
+                <Route path="/account/forwarder" component={AccountForwarder} />
+                <Route path="/account/security" component={AccountSecurity} />
+                <Route path="/account/company" component={AccountCompany} />
+                <Route path="/account/bank" component={AccountBank} />
+                <Route path="/account/store" component={AccountStore} />
+                <Route path="/trades" component={TradeHistory} />
+                <Route path="/messages/:user_id?" component={ChatsPage} />
+                <Route path="/settings/" component={Settings} />
+                <Route path="/forget_password/:token" component={ForgetPage} />
+                <Route path="/paybox-success" component={PaymentSuccessPage} />
               </Content>
               {window.innerWidth < 992 && <Sidebar />}
               <FooterWrapper />
