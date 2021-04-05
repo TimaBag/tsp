@@ -7,7 +7,8 @@ import { getTextProps } from './utils';
 // import { getTag } from './utils';
 
 const Text = styled.div<TextProps>`
-  font-family: Montserrat;
+  font-family: ${(props: TextProps) =>
+    props.fontWeight === 'bold' ? 'MontserratBold' : 'Montserrat Regular'};
   font-style: normal;
   font-size: ${(props: TextProps) => props.fontSize || '53px'};
   line-height: ${(props: TextProps) => props.lineHeight || '120%'};

@@ -26,7 +26,7 @@ const Link = styled(ReactLink)<{ active?: boolean }>`
   color: ${(props) => (props.active ? 'white' : 'gray')};
   border-bottom: ${(props) => (props.active ? '4px solid #2958E5' : 'none')};
   padding: 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
 `;
